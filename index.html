@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nat-Res</title>
+    <title>Baum</title>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body id='home' data-spy='scroll' data-target=".navbar" data-offset='100'>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand order-1" href="#">Nat-Res</a>
+            <a class="navbar-brand order-1" href="#">Baum</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Attractions</a>
+                        <a class="nav-link" href="#attract">Attractions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Events</a>
@@ -44,11 +44,11 @@
     <!--/Nav Bar-->
 
     <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid mt-5">
         <div class="overlay">
             <div class="container text-center">
-                <h1 class="display-4">Nat-Res</h1>
-                <p class="lead">Come to one of the most popular Nature Reserves in all of Ohio!</p>
+                <h1 class="display-4">Baum</h1>
+                <p class="lead">Come to Baum, one of the most popular Nature Reserves in all of Ohio!</p>
                 <div class="btn-group" role="group" aria-label="Jumbotron Buttons">
                     <a class="btn btn-light btn-lg text-dark" href='#events'>Upcoming Events</a>
                 </div>
@@ -57,11 +57,34 @@
     </div>
     <!--/Jumbotron-->
 
-    <!--Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    <!--Main Content-->
+    <div class="container pt-4">
+        <!--Attractions-->
+        <h1 id='attract' class='text-center text-muted my-5'>Attractions</h1>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="css/img/path.jpg" alt="Nature Walk Pathway">
+                    <div class="card-body">
+                        <h4 class="card-title">Nature Trails</h4>
+                        <p class="card-text">Come see our beautiful tails. They are fun for the whole family! For the
+                            kids, there are short, paved trails. For the more experienced hikers, there are long and
+                            steep trails.</p>
+                    </div>
+                </div>
+                <div class="col-lg"></div>
+                <div class="col-lg"></div>
+            </div>
+            <!--/Attractions-->
+        </div>
+        <!--/Main Content-->
+
+        <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
