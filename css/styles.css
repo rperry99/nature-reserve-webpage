@@ -1,5 +1,7 @@
 .jumbotron {
-  background-image: url("../css/img/trees.jpg");
+  background-image: url("../css/img/trees-bg.jpg");
+  background-size: cover;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
