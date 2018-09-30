@@ -1,7 +1,8 @@
 #events .card-header {
+  background-color: rgba(15, 41, 19, 0.1);
   transition: 0.5s ease;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(15, 41, 19, 0.2);
     cursor: pointer;
   }
 }
